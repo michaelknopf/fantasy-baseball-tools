@@ -1,4 +1,4 @@
-import json
+
 
 def merge_data(closer_chart, waivers):
     waiver_rows = index_waivers(waivers)
@@ -7,9 +7,7 @@ def merge_data(closer_chart, waivers):
     for closer in closers:
         player_id = closer['id']
         waiver = waiver_rows.get(player_id)
-        if not waiver:
-            waiver = {}
-        else:
+        if waiver:
             merged.append({**closer, **waiver})
     return merged
 

@@ -1,4 +1,5 @@
 from sabr import parse_closer_chart, fantasy, merge
+
 import json
 import os
 import datetime

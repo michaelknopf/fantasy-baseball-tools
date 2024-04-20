@@ -5,6 +5,7 @@ import random
 
 url = "https://fantasy.espn.com/apis/v3/games/flb/seasons/2022/segments/0/leagues/192574?scoringPeriodId=9&view=kona_player_info"
 
+
 class Fantasy:
 
     def __init__(self, cookies):
