@@ -12,7 +12,21 @@ packages = [
 python = "^3.12"
 requests = "^2.31.0"
 beautifulsoup4 = "^4.12.3"
+dataclasses-json = "^0.6.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  'espn_integration: makes calls to ESPN servers'
+]
+addopts = [
+  '--strict-markers',
+  '-m', 'not espn_integration'
+]
