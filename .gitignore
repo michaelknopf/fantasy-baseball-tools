@@ -1,7 +1,7 @@
 /data/
 /config/
 
-/venv/
+/.venv/
 /.idea/
 *.egg-info/
 *.iml
