@@ -2,8 +2,8 @@ import json
 
 from pytest import fixture
 
-from sabr import path_anchor
-from sabr.fantasy_sdk import ESPNFantasyBaseballSDK
+from fantasy_baseball import path_anchor
+from fantasy_baseball.espn_sdk import ESPNFantasyBaseballSDK
 
 @fixture
 def sdk():

@@ -1,6 +1,6 @@
 from pytest import mark, param
 
-from sabr.closer_chart import parse_closer_chart, parse_closer_id, CloserChartTeam, CloserChartPitcher
+from fantasy_baseball.closer_chart import parse_closer_chart, parse_closer_id, CloserChartTeam, CloserChartPitcher
 
 
 @mark.espn_integration

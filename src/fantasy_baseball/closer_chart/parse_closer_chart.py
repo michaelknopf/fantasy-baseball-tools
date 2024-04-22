@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup, Tag, ResultSet
 import re
 
-from sabr.closer_chart import CloserChartPitcher, CloserChartTeam
+from fantasy_baseball.closer_chart import CloserChartPitcher, CloserChartTeam
 
 CLOSER_CHART_URL = "https://www.espn.com/fantasy/baseball/flb/story?page=REcloserorgchart"
 USER_AGENT = ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
@@ -81,7 +81,7 @@ def parse_player_soup(player_soup: Tag):
     PERCENT_REGEX = re.compile('\\(\\d+\\.\\d+%\\)')
     if not PERCENT_REGEX.fullmatch(ownership_percentage):
         raise Exception(f'Ownership percentage does not match expected pattern: {ownership_percentage}')
-    ownership_percentage = ownership_percentage[1:-2]
+    ownership_percentage = float(ownership_percentage[1:-2])
 
     player_id = parse_closer_id(player_link)
     if not player_id:
