@@ -1,7 +1,7 @@
 from pytest import mark
 import json
 
-from sabr.fantasy_sdk import Player
+from fantasy_baseball.espn_sdk import Player
 from test_utils.path_anchor import TEST_DIR
 
 @mark.espn_integration

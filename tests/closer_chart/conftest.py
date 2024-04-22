@@ -1,7 +1,9 @@
 from pytest import fixture
 from bs4 import BeautifulSoup
+import json
 
-from sabr.closer_chart import parse_closer_chart
+from fantasy_baseball.closer_chart import parse_closer_chart, CloserChartTeam
+from fantasy_baseball.espn_sdk import Player
 from test_utils.path_anchor import TEST_DIR
 
 @fixture
@@ -29,3 +31,15 @@ def team_node_soup():
     with open(TEST_DIR / 'team_node.html') as f:
         html = f.read()
     return BeautifulSoup(html, 'html.parser')
+
+@fixture
+def closer_teams():
+    with open(TEST_DIR / 'closer_teams.json') as f:
+        closer_teams_json = json.load(f)
+    return [CloserChartTeam.from_dict(x) for x in closer_teams_json]
+
+@fixture
+def waivers():
+    with open(TEST_DIR / 'waivers.json') as f:
+        players = json.load(f)
+    return [Player.from_dict(x) for x in players]

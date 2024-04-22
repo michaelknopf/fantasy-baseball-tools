@@ -1,0 +1,78 @@
+[
+  {
+    "name": "LOS ANGELES DODGERS",
+    "link": "/mlb/team/_/name/lad/los-angeles-dodgers",
+    "pitchers": [
+      {
+        "name": "Evan Phillips",
+        "id": 37911,
+        "link": "https://www.espn.com/mlb/player/_/id/37911/evan-phillips",
+        "role": "Closer",
+        "ownership_percentage": "86.9",
+        "is_tired": false
+      },
+      {
+        "name": "Daniel Hudson",
+        "id": 30376,
+        "link": "https://www.espn.com/mlb/player/_/id/30376/daniel-hudson",
+        "role": "Primary setup",
+        "ownership_percentage": "10.6",
+        "is_tired": false
+      },
+      {
+        "name": "Joe Kelly",
+        "id": 31992,
+        "link": "https://www.espn.com/mlb/player/_/id/31992/joe-kelly",
+        "role": "Secondary setup",
+        "ownership_percentage": "1.5",
+        "is_tired": true
+      },
+      {
+        "name": "Ryan Brasier",
+        "id": 30189,
+        "link": "https://www.espn.com/mlb/player/_/id/30189/ryan-brasier",
+        "role": "Sleeper",
+        "ownership_percentage": "0.5",
+        "is_tired": true
+      }
+    ]
+  },
+  {
+    "name": "SAN FRANCISCO GIANTS",
+    "link": "/mlb/team/_/name/sf/san-francisco-giants",
+    "pitchers": [
+      {
+        "name": "Camilo Doval",
+        "id": 41337,
+        "link": "https://www.espn.com/mlb/player/_/id/41337/camilo-doval",
+        "role": "Closer",
+        "ownership_percentage": "91.3",
+        "is_tired": false
+      },
+      {
+        "name": "Tyler Rogers",
+        "id": 34026,
+        "link": "https://www.espn.com/mlb/player/_/id/34026/tyler-rogers",
+        "role": "Primary setup",
+        "ownership_percentage": "2.7",
+        "is_tired": false
+      },
+      {
+        "name": "Ryan Walker",
+        "id": 5000950,
+        "link": "https://www.espn.com/mlb/player/_/id/5000950/ryan-walker",
+        "role": "Secondary setup",
+        "ownership_percentage": "0.4",
+        "is_tired": false
+      },
+      {
+        "name": "Taylor Rogers",
+        "id": 33671,
+        "link": "https://www.espn.com/mlb/player/_/id/33671/taylor-rogers",
+        "role": "Sleeper",
+        "ownership_percentage": "0.5",
+        "is_tired": false
+      }
+    ]
+  }
+]

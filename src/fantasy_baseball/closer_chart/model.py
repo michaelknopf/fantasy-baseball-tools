@@ -10,7 +10,7 @@ class CloserChartPitcher(DataClassJsonMixin):
     id: int
     link: str
     role: str
-    ownership_percentage: str
+    ownership_percentage: float
     is_tired: bool
 
 @dataclass_json

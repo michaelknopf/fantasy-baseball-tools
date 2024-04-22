@@ -38,7 +38,7 @@ class PlayerProfile(DataClassJsonMixin):
     last_news_date: Optional[int]
     ownership: 'Ownership'
     pro_team_id: int
-    season_outlook: str
+    season_outlook: Optional[str]
     starter_status_by_pro_game: Dict[int, str]
     stats: List['Stats']
 
